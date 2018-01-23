@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" href="style.css" media="all">
+<!-- <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=3.8' type='text/css' media='all' />-->
+
+<title>Game Addict - Clean Responsive Multi-Purpose Theme</title>
+
+<style>
+body {
+  color: #222;
+  font: 12px/20px Helvetica, Arial, sans-serif;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+#nav {
+  left: 20px;
+  list-style: none;
+  position: fixed;
+  top: 20px;
+}
+#nav li {
+  margin-bottom: 2px;
+}
+#nav a {
+  background: #ededed;
+  color: #666;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#nav a:hover {
+  background: #dedede;
+}
+#nav .current a {
+  background: #666;
+  color: #ededed;
+}
+.current {
+  background: red;
+}
+#container {
+  margin: 0 auto;
+  width: 800px;
+}
+.div {
+  border-bottom: 5px solid #ccc;
+  padding: 20px;
+}
+.div p:last-child {
+  margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="sidebar">
+  <ul id="navigation">
+    <li><a class="nav-tab" href="#documenter_cover">Welcome</a></li>
+    <li><a class="nav-tab" href="#installation">Installation</a></li>
+    <li><a class="nav-tab" href="#adminpanel">Admin panel options</a></li>	
+	<li><a class="nav-tab" href="#backgrounds">Backgrounds</a></li>
+    <li><a class="nav-tab" href="#menu">Menus</a></li>
+    <li><a class="nav-tab" href="#slider">Slider</a></li>
+	<li><a class="nav-tab" href="#page">How to create a page</a></li>
+	<li><a class="nav-tab" href="#clanwars">Clan Wars</a></li>	
+	<li><a class="nav-tab" href="#portfolio">Portfolio</a></li>
+	<li><a class="nav-tab" href="#forums">Forums</a></li>
+	<li><a class="nav-tab" href="#blog">Blog</a></li>
+	<li><a class="nav-tab" href="#shop">WooCommerce (Shop)</a></li>
+	<li><a class="nav-tab" href="#buddypress">BuddyPress</a></li>
+	<li><a class="nav-tab" href="#price-tables">Price tables</a></li>
+    <li><a class="nav-tab" href="#widgets">Widgets</a></li>
+	<li><a class="nav-tab" href="#important">Further Help</a></li>
+  </ul>
+</div>
+<div id="main_content">
+  <div id="documenter_cover">
+  
+  
+    <div id="header"> </div>
+    
+    <ul>
+    	<!--<li>
+       		Version: <strong>1.0 </strong>	
+        </li>-->
+        <li>
+        	Support: <strong><a href="http://support.skywarriorthemes.com" target="_blank">support.skywarriorthemes.com</a></strong>
+        </li>
+    </ul>
+    
+	<p>To view this theme in its full beauty please use Chrome or Firefox. IE makes kittens cry and everybody loves kittens... right?</p>
+    
+  </div>
+  
+
+  
+  <div id="installation">
+  <h3>Installation</h3>
+ <p>To install this theme you must have a working version of WordPress already installed. For more info on how to install WordPress please see the WordPress Codex: <a href="http://codex.WordPress.org/Installing_WordPress">http://codex.WordPress.org/Installing_WordPress</a></p>
+
+		<p>Extract the zipped package downloaded from ThemeForest to your desktop, in the extracted package you will find the game-addict.zip file which is the WordPress theme.</p>
+
+		<p>You can install the theme in two ways:</p>
+		
+		<ul>
+			<li>
+				<p><strong>FTP:</strong> Extract game-addict.zip file and upload the extracted folder to the <strong>/wp-content/themes/</strong> folder on your server.<strong> Change the ftp client transfer mode to Binary if you haven't done it already: <a href="https://manage.grabweb.net/knowledgebase.php?action=displayarticle&id=81" target="_blank">Click here if you don't know how.</a></strong></p>
+				</li>
+				<li><p><strong>WordPress:</strong> Navigate to the <strong>Appearance -> Add New Themes -> Upload</strong> page. Select the game-addict.zip file. Press the <strong>Install Now</strong> button to upload and install the theme.</p>
+			</li>
+		</ul>
+		
+		<p>After uploading the theme, you have to activate it. Navigate to the <strong>Appearance -> Themes</strong> page to activate the theme.</p>
+		<p>&nbsp; </p>
+	<p><strong>Changing the URL structure</strong></p>
+	<p>To change the URL structure so the URL looks more user-friendly (also is better for SEO) navigate to <strong>Settings -> Permalinks</strong> and under 'Common Settings' select 'Post name' or any other option EXCEPT default.</p>
+	<img src="images/permalinks.jpg">
+    <p>&nbsp; </p>
+	<p><strong>Uploading the XML file (Importing the demo content)</strong></p>
+	<p>With the files that you downloaded you should also be able to find a .xml file. This file includes all the content that you can see in the demo file so you can import them to your site and have some initial content to play with. To do this please follow the following steps</p>
+	<ul>
+		<li>In the admin panel navigate to tools -> import.</li>
+		<li>In the list of options to import, select Wordpress.</li>
+		<li>Agree and install the plugin (if you haven't done this before).</li>
+		<li>Once installed click on the choose file button and upload the .xml file.</li>
+		<li>Once it's finished to upload the page should reload. Tick "Download and import file attachments".</li>
+		<li>All set!. Please note that you will still need to save the menu and do some other small tweaks, please continue reading this instructions file if you aren't sure how to proceed.</li>
+	</ul>
+		
+  </div>
+  
+  
+  
+  <div id="adminpanel">
+    <h3>Admin panel options </h3>
+ 
+    <p>To customize the look and feel of Game Addict you need to use the Theme Options panel:</p>
+	<img src="images/theme_option.jpg" style="max-width:100%;">
+    <p>&nbsp; </p>
+    <h2>General settings </h2>
+    <p>Inside the General Settings tab you will be able to customize the logo and favicon (small icon that appears in the browser tab) by uploading your own images. Also there are the blog and project page settings giving you control over the quantity of information being show.</p>
+	
+	<h2>SEO</h2>
+    <p>Some basic SEO options for your site. Fancy some more customizable SEO plugin? We recommend <a href="http://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack plugin for Wordpress</a>, its free and awesome!</p>
+	
+	<h2>WooCommerce</h2>
+    <p>Different layout options for the WooCommerce page</p>
+	
+	<h2>Customize</h2>
+    <p>Look and feel customization options for the theme. Include: Backgrounds, colours and menu</p>
+    
+    <h2>Footer</h2>
+    <p>Information related to the footer: copyright text and logo.</p>
+    
+    <h2>Contact</h2>
+    <p>In this section you can enter the email and subject of the messages you will receive from the contact page and google map settings to be able to set up your own custom marker.</p>   
+    
+    <h2>Social media</h2>
+    <p>You can enter and enable or disable your social links in this category. </p>
+    
+   
+    
+	 <p>&nbsp; </p>
+  </div>
+  
+  <div id="backgrounds">
+	<h3>Special mention: Backgrounds</h3>
+	    <p>As you just read in the previous section, you should easily be able to upload the background that you want under the Customization tab in Theme Options.</p>
+	 <p>As you may have seen there is also the option to make the background footer repeat, this option will allow you to have a repeated pattern underneath the header background should you wish to do so.</p>
+	 <img src="images/background.jpg" style="max-width:100%;">
+	 <p>Finally, unfortunately we cannot sell the images that you see in the demo for copyright reasons. However, if you are interested in them you may be able to find some help in the support forum ;)</p>
+    <p>&nbsp; </p>
+  </div> 
+  
+  
+  <div id="menu">
+    <h3>Menus  </h3>
+    <p>Game Addict supports one custom WordPress menu with a one level dropdown.</p>
+  	<p>To create the menu, navigate to Appearance -> Menus page. Enter a name for your menu and add links to the menu by using the options given on the left sidebar. You can manage your menus using the drag and drop functionality. After setting up your menu, select the menu you just created from the theme locations dropdown box and hit the "Save" button.</p>
+	<img src="images/menu.jpg">
+    <p>&nbsp; </p>
+  </div>
+
+  
+  <div id="slider">
+    <h3>Slider</h3>
+    <p>The plugin used in this theme is the LayerSlider Premium WP slider which you can find by clicking <a target="_blank" href="http://codecanyon.net/item/layerslider-wp-the-WordPress-parallax-slider/1362246">here</a></p>
+    <p>You can find the documentation of the slider by clicking on the documentation link on the top right side when creating a slide.</p>
+	<p><a href="http://www.youtube.com/watch?v=ZY9SxVyugx4">Also here is a video to get you started made by the author himself.</a></p>
+    <p>&nbsp; </p>
+  </div>
+  <div id="page">
+    <h3>How to create a page (with page builder)</h3>
+    <p>Creating pages is now easier than ever with the page builder:</p>
+    <ul>
+    	<li>Head to the page builder tab inside the WordPress admin panel.<br>
+        </li>
+        <li>Add any blocks you want by using drag and drop.</li>
+        <li>Customize the block as you want.</li>
+        <li>If you want resize them to fit the columns that you select. <strong>Please note: do not resize the "Latest projects" block, it is made to be full width.</strong>
+        </li>
+        <li>Save the template.</li>
+		<img src="images/pbuilder.jpg" style="max-width:100%;">
+	    <p>After following the above steps you should have a page template created. Now copy the template id as seen bellow:</p>
+        <img src="images/templaten.png" style="max-width:100%;">
+        <li>Navigate to the page where you want the page template to appear and paste the code in there.</li>
+
+        <li>That's it! You can also add text or a slider to the same page you have the blocks template!</li>
+		
+    </ul>
+	<p>&nbsp; </p>
+	<h4>Special mention: Parallax and columns</h4>
+	<p> Column and Parallax blocks wrap around other blocks so do not used them by their own, they always need blocks inside. In another note, please use Parallax full width. </p>
+	
+	<p>&nbsp; </p>
+	<h4>Special mention: Custom backgrounds</h4>
+	<p>You can assign custom backgrounds to individual pages by uploading the image you want in the header image block. You can find it in the right bottom side of the page underneath feature image. </p>
+	<img src="images/pageheader.jpg" style="max-width:100%;">
+	
+	<p>&nbsp; </p>
+  </div>
+ 
+    <div id="clanwars">
+    <h3>Clan Wars</h3>
+    <p>Game Addict give you the power to manage teams, games and matches! To get started head to Clan Wars section in the admin panel:</p>
+	<img src="images/clanwars.jpg" style="max-width:100%;">
+	<p>&nbsp; </p>
+	<h4>Importing data</h4>
+	<p>You have 2 different import options: One is the import link in the clan war menu which will import some default games, and the second one is to import the data of the demo. To do this go into settings -> ClanWar data import:</p>
+	<img src="images/clanimport.jpg" style="max-width:100%;">
+	<p>There you will see a button that allows you to import the data.</p>
+	<p>&nbsp; </p>
+	<h4>Creating games</h4>
+	<p>First thing you should do is to create games (if you don't find the one you want in the current ones). To do this go into games submenu and "Add New", just like normal posts. Here you will find 2 options:</p>
+	<ul>
+		<li><strong>Title</strong>: Title of the game, Ex: Counter Strike</li>
+		<li><strong>Abbreviation</strong>: Name tag, Ex: CS</li>
+	</ul>
+	<p>&nbsp; </p>
+	<h4>Adding maps</h4>
+	<p>After you create a game you should add maps to it. To do this go to games and hover over the game you wont and you will see:</p>
+	<img src="images/maps.jpg" style="max-width:100%;">
+	<p>Click on it and you will be able to add a new map.</p>
+	<p>&nbsp; </p>
+	<h4>Adding teams</h4>
+    <p>After games and maps the next step is to add teams. To do this click on teams in the submenu and add new. You have the option to give it a name and a logo. Easy peasy.</p>
+	<p>Just a quick note: After you create the teams, you can select one to be the house team, this will affect some widgets making it show first.</p>
+	<p>&nbsp; </p>
+	<h4>Creating matches</h4>
+	<p>Finally after creating games, maps and teams we can create matches. Go into clan wars -> matches and click "Add new". There you will be able to</p>   
+	<ul>
+		<li>Select a game</li>
+		<li>Give the match a title. If you don't have a title for it, just write the name of the teams, Ex: Team Alpha vs Team Bravo</li>
+		<li>Write a match description</li>
+		<li>Add a league URL or external match URL. (optional)</li>
+		<li>Select PWC (Practice clan war) or official</li>
+		<li>Select the 2 teams</li>
+		<li>Add maps and rounds. Here we suggest to try to keep the rounds the same amount so it looks much better.</li>
+	</ul>
+	<p>&nbsp; </p>
+	<p>Thats it! you now can successfully create matches. There are 2 widgets at your disposition to show the matches.</p>
+	<p><strong style="color:red;">To show the matches page, create a normal page and paste this code in the Text tab (not visual): [wp-clanwars]</strong> </p>
+	
+	<p>&nbsp; </p>
+  </div>
+
+  
+    <div id="portfolio">
+    <h3>Portfolio</h3>
+    <p>With the portfolio you will be able to showcase your projects. Creating portfolio items is similar as creating pages, just with more options:</p>
+    <p>If you want additional information you can add page builder blocks too! (please check "<a href="#page">How to create a page</a>" section for more info into how to do this.)</p>
+	<p>Portfolio items have some custom options:</p>   
+	
+	<ul>
+		<li>Click on the Portfolio link in the WP menu in your admin panel.<br><img src="images/portfolio.jpg" style="max-width:100%;"></li>
+		<li>Add all the relevant information to the projects</li>
+		<li>Click preview to see the how the project look and click publish when happy with the result</li>
+    </ul>
+    
+    <p>Portfolio items have some custom options:</p>
+
+    <ul>
+    	<li><strong>Advanced text editor:</strong> nothing custom, default from WP, you know the deal ;) </li>
+        <li><strong>Post style:</strong> You can select left or right sidebar position. </li>
+        <li><strong>Featured Image:</strong> Image for your project. Please always set an featured image, even when you are using gallery or video since it will be needed if you project is displayed on widgets or blocks. </li>
+ 		<li><strong>Sidebar text:</strong> Text that you can add to the sidebar, if you need more space you can use the general text field and it will show in the bottom of the page. You can also add block templates to the sidebar, but not recommended. </li>
+ 		<li><strong>Project link:</strong> If you want to link to where the project is displayed you can do it here. You can also set the name of the button. Ex: You are showcasing a website, you can add the link here with the text "Visit website". </li>
+ 		<li><strong>Video Link:</strong> Add the embed code of a video here. It will overwrite the image in the display container. <strong>Please note: if you only add the url it wont work, it need to be the whole embed code</strong></li>
+ 		<li><strong>Client:</strong> If you did a project for a client, you can add the name here. HTML is enabled in this field, so you can add an html link if you want.</li>
+        <li><strong>How can I create a gallery?:</strong> To create a gallery simply add a WP gallery to the normal text editor <strong>(NOT SIDEBAR)</strong>, it will output the gallery :)</li>
+    </ul>
+	<p>&nbsp; </p>
+  </div>
+  
+  <div id="forums">
+    <h3>Forums - bbPress</h3>
+    <p>To be able to have forums in your site, you will need to install bbPress, which is free plugin for Wordpress. Game Addict is fully compatible with bbPress, and you wont need to do any additional steps for it to look as the demo site. </p>
+	<ul>
+		<li><a href="http://bbpress.org/">Download it here</a></li>
+		<li><a href="http://codex.bbpress.org/">Documentation</a></li>
+		<li><a href="http://codex.bbpress.org/step-by-step-guide-to-setting-up-a-bbpress-forum/">How to set up bbPress</a></li>
+	</ul>
+    <p>&nbsp; </p>
+  </div>  
+  
+ <div id="blog">
+  <h3>How to create the blog page</h3>
+ 
+    <p>Creating the blog page is very easy. Once you install the theme a category called blog will be automatically created:  </br>
+		<img src="images/blog1.jpg" style="max-width:100%;">
+       <ul>
+       <li>Go to categories and copy its ID from the URL. Check the number after. <i>ex: tag_ID=2 the number we need is 2</i></li>
+	   <img src="images/blog2.jpg" style="max-width:100%;">
+       <li>Then head to theme barracks and under general settings paste the ID into "blog category" field</li>
+       <li>Click on Save all changes</li>
+       
+      <li> Head to the pages tab and create a new page</li>
+       <li>Assign blog template to that page</li>
+       
+     <li> Publish and all done!</li>
+      </ul>
+	  <p>&nbsp; </p>
+  </div>
+  
+  <div id="shop">
+  <h3><img src="images/ninja-joy.svg" /> WooCommerce - Set up your own shop</h3>
+    <p>Now you can add your own shop to your site with WooCommerce compability. To get started you will need to install the fee WooCommerce Plugin, which you can do from your plugins section of your admin panel. Here is a list of the external documentation that you may need to work with WooCommerce:</p>
+	</br>
+       <ul>
+       <li><a href="http://www.woothemes.com/woocommerce/">WooCommerce Plugin Page </a>– This is the official WooCommerce plugin page</li>
+       <li><a href="http://docs.woothemes.com/documentation/plugins/woocommerce/woocommerce-user-guide/getting-started/">WooCommerce Documentation</a>- This is the WooCommerce Online documenation created by WooThemes</li>
+       <li><a href="http://wordpress.org/support/plugin/woocommerce">WooComerce Commiunity Forums</a>- This is the community forum for WooCommerce plugin created by WooThemes</li>  
+      <li> <a href="http://docs.woothemes.com/document/woocommerce-shortcodes/">WooComerce Built-In Shortcodes</a>- These are the included shortcodes for WooCommerce, our custom shortcodes are not included in this.</li>
+      </ul>
+	  <p>&nbsp; </p>
+  </div> 
+  
+  <div id="buddypress">
+  <h3><img src="images/bp.jpg" /> BuddyPress</h3>
+    <p>BuddyPress is a powerful plugin that takes your WordPress.org powered site beyond the blog with social-network features like user profiles, activity streams, user groups, and more.</p>
+	<p>Game Addict comes with a styled version of BuddyPress, including the option of adding a sidebar</p>
+	<p><a href="http://codex.buddypress.org/getting-started/">Here you can find the instructions and documentation on how to set up BuddyPress in your site.</a> Links goes to the official site.</p>
+	  <p>&nbsp; </p>
+  </div> 
+  
+  <div id="price-tables">
+    <h3>Price tables</h3>
+ 	<p>The price tables follow the same principle as the page builder. Once you have created one, simply copy the code and paste it in the page where you want it to appear</p>
+    <p>To create a price table you need to:</p> 
+	<ul>
+		<li>Click on the Portfolio link in the WP menu in your admin panel.<br><img src="images/price-tables.jpg" style="max-width:100%;"></li>
+		<li>Add a new table </li>
+		<li>Start adding columns and add the information you want</li>
+		<li>You can drag the columns and rows to re-arrange them.</li>
+		<li>You can also add more features with the add link</li>
+		<li>Once happy click on publish</li>
+		<li>On the right side, under the publish button you will notice a code:
+			<br><img src="images/shortcode.jpg"></li>
+		 <li>Copy it and paste it in the page you want the table to appear</li>
+		 <li>Ta-da!</li>
+	</ul>
+    <p>&nbsp; </p>
+  </div>
+  
+    
+  <div id="widgets">
+    <h3>Widgets</h3>
+ 
+    <p>This template supports 7 widget sidebars: 1 for the footer area, 1 for the clan war pages, 1 general sidebar, 1 for the homepage, 1 for BuddyPress pages, 1 for the blog and 1 for WooCommerce pages. </br>
+	The general sidebar are there just in case you want to add some different sidebar to a page</p>
+	
+	<p>Adding widgets is very easy, just head to 'Appearance' and then 'Widgets'.</p>
+	<img src="images/widgets.jpg" style="max-width:100%;">
+	<p>Here you will be able to drag and drop the widgets that you want in one of the four sidebars.</p>
+    <p>&nbsp; </p>
+  </div>
+  
+
+  <div id="important">
+    <h3>Further help</h3>
+	<p>&nbsp; </p>
+    <h2>What we can help you with</h2>
+
+<p>We can help you with any questions about how the theme works and any bugs or errors you might find, for example:</p>
+ 
+ <ul>
+    	<li>Which file is some particular code in?</li>
+		<li>What can the theme do (or not do)? </li>
+		<li>Are there future updates and enhancements planned? </li>
+		<li>I found a bug/error!, etc.</li>
+</ul>
+    	
+
+</p>
+<h2>What we cannot help you with</h2>
+
+<p>Themeforest does not require authors to give support in any way shape or form, nor does your purchase of a ThemeForest
+ item come with any guarantee of support in any way. However, we still spend a great deal of time each week providing support to you guys because it's important to us
+ that you guys get a top-notch product and service.
+</p>
+<p>That said, it is not feasible for me time-wise to provide support beyond questions about how the theme works and fixing any bugs or errors. This includes:
+</p>
+ <ul>
+    	<li>Customizing the theme  </li>
+		<li>Adding or modifying the theme functionality </li>
+		<li>Teaching you how to use WordPress</li>
+		<li>Teaching you how to use Adobe Photoshop or any image editing programs</li>
+		<li>Support for external plugins.</li>
+</ul>
+
+
+
+<h2>Please do not abuse support</h2>
+
+<p>This support is provided completely free of charge. Please remember that a customized WordPress design would normally cost $1500-3000, and for $40-50 you are getting a bargain.
+For this reason, please do not expect us to tailor the theme to your individual needs, it is not physically possible to do this for each of you.</p>
+
+<p>That said, if you find any errors or bugs, don't hesitate to let us know via the support forum and we will try to get it fixed as soon as possible.
+At the end of the day, we hope you guys enjoy using this template! If you are happy with it, please don't forget to rate it on ThemeForest! (We will love you forever ^^) 
+</p><div id="footer">
+    More deliciously cool stuff at <a href="http://www.skywarriorthemes.com">http://www.skywarriorthemes.com</a>.
+    </div>
+</div>
+
+<script src="javascript/jquery.1.6.4.js"></script>
+<script src="javascript/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="javascript/jquery.easing.js"></script>
+<script src="javascript/js_script.js"></script>
+<script>document.createElement('div');var duration=500,easing='easeInCubic';</script>
+
+
+</body>
+
+
+<script src="jquery.js"></script>
+<script src="jquery.scrollTo.js"></script>
+<script src="jquery.nav.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#navigation').onePageNav({
+    begin: function() {
+	  console.log('start')
+    },
+    end: function() {
+	  console.log('stop')
+    }
+  });
+  
+  $('.do').click(function(e) {
+    $('#div-4').append('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>');
+    e.preventDefault();
+  });
+  
+});
+</script>
+
+</body>
+</html>

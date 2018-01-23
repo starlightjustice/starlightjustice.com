@@ -1,0 +1,64 @@
+<div class="pricetable">
+    <div class="sep space"></div>
+
+    <div class="widget-inner">
+	<?php foreach((array) $table as $i => $column) : ?>
+		<div class="<?php print implode(' ', $column['classes']) ?> pricetable-col" style="width:<?php print $column['width'] ?>%">
+          		<?php if($column['title'] == '' and $column['price'] == ''){ ?>
+          		<div class="pt-header-move">
+          		 <?php }else{ ?>
+          		 <div class="pt-header">
+          		 <?php } ?>
+					<?php if($column['title'] == ''){ ?>
+					<?php }else{ ?>
+					<h2 class="pt-top"><?php print $column['title'] ?></h2>
+					<?php } ?>
+
+					<?php if($column['price'] == ''){ ?>
+                    <?php }else{ ?>
+                    <div class="pt-price">
+                        <h3><?php print $column['price'] ?></h3>
+                        <span><?php print $column['detail'] ?></span>
+                     </div>
+                    <?php } ?>
+				</div>
+
+				<ul class="pt-content">
+					<?php if(!empty($column['features'])) : ?>
+						<?php foreach($column['features'] as $j => $feature) : ?>
+							<li>
+							    <?php if($feature['icon'] == 'Yes') { ?>
+							        <i class="icon-ok"></i>
+							    <?php }elseif($feature['icon'] == 'No'){ ?>
+							         <i class="icon-remove"></i>
+							    <?php }else{ ?>
+								<?php print $feature['title'] ?>
+								<?php if(!empty($feature['sub'])) : ?>
+									<small><?php print $feature['sub'] ?></small>
+								<?php endif; ?>
+								<?php } ?>
+							</li>
+						<?php endforeach ?>
+					<?php endif; ?>
+				</ul>
+
+                <?php if($column['button'] == ''){ ?>
+                    <?php }else{ ?>
+                    <div class="pt-footer">
+                    <?php if($column['classes'][1] == 'pricetable-featured'){ ?>
+                    <a class="button-medium" href="<?php print empty($column['url']) ? '#' : $column['url'] ?>">
+                        <?php print empty($column['button']) ? __('Select', 'addict') : $column['button'] ?>
+                    </a>
+                    <?php }else{ ?>
+                      <a class="button-small" href="<?php print empty($column['url']) ? '#' : $column['url'] ?>">
+                        <?php print empty($column['button']) ? __('Select', 'addict') : $column['button'] ?>
+                    </a>
+                    <?php } ?>
+                </div>
+                    <?php } ?>
+		</div>
+	<?php endforeach ?>
+
+
+	<div class="pricetable-clear"></div>
+</div></div>

@@ -1,0 +1,4 @@
+.widget_latest_twitter_widget{ text-align: left; padding: 15px 0px 0px; list-style:none; }
+.latest-twitter-tweet{ font-style: italic;margin: 0px 0px 10px 0px;border-bottom: 1px solid rgba(204, 204, 204, 0.5);padding: 0px 0px 10px 0px; }
+#latest-twitter-widget-icon, #latest-twitter-widget-pic{ float: left; border: 0px; margin-right: 5px; }
+.latest-twitter-tweet-time{ font: 9pt/12pt arial; color: #999999; margin-bottom: 10px; }
