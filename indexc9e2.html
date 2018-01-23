@@ -1,0 +1,152 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Skywarrior Themes | Game Addict - WP</title>
+
+		<link  href="http://fonts.googleapis.com/css?family=Kreon:300,400,700" rel="stylesheet" type="text/css" >
+
+        <link href="selector/styles.css" rel="stylesheet" media="all" />
+        <link rel="shortcut icon" href="selector/favicon.png" />
+
+		<!--[if IE]>
+
+			<style type="text/css">
+
+				li.purchase a {
+					padding-top: 5px;
+					background-position: 0px -4px;
+				}
+
+				li.remove_frame a {
+					padding-top: 5px;
+					background-position: 0px -3px;
+				}
+
+				#theme_select {
+					padding: 8px 8px;
+				}
+
+				#theme_list {
+					margin-top: 2px;
+				}
+
+			</style>
+
+		<![endif]-->
+
+		<style type="text/css">
+
+		
+		</style>
+
+        <script type="text/javascript" src="selector/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript">
+
+        var theme_list_open = false;
+
+        $(document).ready(function () {
+
+        	function fixHeight () {
+
+        	var headerHeight = $("#switcher").height();
+
+        	$("#iframe").attr("height", (($(window).height() - 10) - headerHeight) + 'px');
+
+        	}
+
+        	$(window).resize(function () {
+
+        		fixHeight();
+
+        	}).resize();
+
+        	$("#theme_select").click( function () {
+
+        		if (theme_list_open == true) {
+
+        		$(".center ul li ul").hide();
+
+        		theme_list_open = false;
+
+        		} else {
+
+        		$(".center ul li ul").show();
+
+        		theme_list_open = true;
+
+        		}
+
+        		return false;
+
+        	});
+
+
+        	$("#theme_list ul li a").click(function () {
+
+        	var theme_data = $(this).attr("rel").split(",");
+
+        	$("li.purchase a").attr("href", theme_data[1]);
+        	$("li.remove_frame a").attr("href", theme_data[0]);
+        	$("#iframe").attr("src", theme_data[0]);
+
+        	$("#theme_list a#theme_select").text($(this).text());
+
+        	$(".center ul li ul").hide();
+
+        	theme_list_open = false;
+
+        	return false;
+
+        	});
+
+
+
+        });
+
+        </script>
+
+</head>
+
+<body>
+
+	<div id="switcher">
+
+		<div class="center">
+
+		<ul>
+
+		<li><img src="selector/logo.png" alt="" /></li>
+
+		<li id="theme_list"><a id="theme_select" href="#">Game Addict - WP</a>
+
+			<ul>
+
+				<li><a href="#" rel="https://skywarriorthemes.com/arcane/landing,https://themeforest.net/item/arcane-the-gaming-community-theme/17400106?ref=skywarrior">Arcane </a><img src="../skywarriorthemes.com/assets/preview/arcane.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/crystalskull,https://themeforest.net/item/crystalskull-gaming-magazine-wordpress-theme/13612358?ref=Skywarrior">CrystalSkull </a><img src="../skywarriorthemes.com/assets/preview/crystalskull.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/blackfyre/landing/,https://themeforest.net/item/blackfyre-create-your-own-gaming-community/10618851?ref=Skywarrior">Blackfyre</a><img src="../skywarriorthemes.com/assets/preview/blackfyre.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/blackfyre/html,https://www.skywarriorthemes.com/blackfyre-template/">Blackfyre - HTML</a><img src="../skywarriorthemes.com/blackfyre/html/preview_html.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/gameaddict/html,https://themeforest.net/item/clan-war-gaming-template/7332190?ref=Skywarrior">Game Addict - HTML</a><img src="../skywarriorthemes.com/assets/preview/ga_html.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/gameaddict,https://themeforest.net/item/game-addict-clan-war-gaming-theme/6771881?ref=Skywarrior">Game Addict - WP</a><img src="../skywarriorthemes.com/assets/preview/ga.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/atticus,https://themeforest.net/item/atticus-clean-responsive-multipurpose-theme/6002718?ref=Skywarrior">Atticus</a><img src="../skywarriorthemes.com/assets/preview/atticus.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/oblivion/html/,https://themeforest.net/item/-oblivion-the-multipurpose-gaming-template/7414283?ref=Skywarrior">Oblivion - HTML</a><img src="../skywarriorthemes.com/assets/preview/ob_html.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/oblivion,http://themeforest.net/item/oblivion-the-ultimate-multipurpose-gaming-theme/5501609?ref=Skywarrior">Oblivion</a><img src="../skywarriorthemes.com/assets/preview/oblivion.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/fundingpress,https://themeforest.net/item/fundingpress-the-crowdfunding-wordpress-theme/4371069?ref=Skywarrior">Fundingpress</a><img src="../0.s3.envato.com/files/54031532/preview.__large_preview.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/orizon,https://themeforest.net/item/orizon-the-gaming-template-html-version/3418583?ref=Skywarrior">Orizon - HTML</a><img src="../0.s3.envato.com/files/42568438/1.__large_preview.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/orizon/wp,https://themeforest.net/item/orizon-the-gaming-template-wp-version/3792360?ref=Skywarrior">Orizon - WP</a><img src="../0.s3.envato.com/files/47151633/banner_v3.__large_preview.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/hikari/html,https://themeforest.net/item/hikari-premium-portfolio-and-blog-template/4696575?ref=Skywarrior">Hikari - HTML</a><img src="../0.s3.envato.com/files/55981810/preview.__large_preview.jpg" /> </li><li><a href="#" rel="https://skywarriorthemes.com/hikari/wp,https://themeforest.net/item/hikari-premium-portfolio-and-blog-theme/5023869?ref=Skywarrior">Hikari - WP</a><img src="../0.s3.envato.com/files/60454303/preview_wp.__large_preview.jpg" /> </li>
+			</ul>
+
+		</li>
+
+		<li class="purchase" rel="https://themeforest.net/item/game-addict-clan-war-gaming-theme/6771881?ref=Skywarrior"><a target="_blank" href="https://themeforest.net/item/game-addict-clan-war-gaming-theme/6771881?ref=Skywarrior">Purchase</a></li>
+		<li class="remove_frame" rel="https://skywarriorthemes.com/gameaddict"><a href="https://skywarriorthemes.com/gameaddict">Remove Frame</a></li>
+
+		</div>
+
+		</ul>
+
+	</div>
+
+    <iframe id="iframe" src="https://skywarriorthemes.com/gameaddict" frameborder="0" width="100%"></iframe>
+
+</body>
+
+
+<!-- Mirrored from themes.skywarriorthemes.com/?theme=Game-Addict by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2018 09:25:48 GMT -->
+</html>
+
